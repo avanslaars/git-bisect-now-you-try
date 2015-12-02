@@ -8,4 +8,6 @@
     }
   }
 
+  var stuffFunctionRef = doSomeStuff();
+
 }());
