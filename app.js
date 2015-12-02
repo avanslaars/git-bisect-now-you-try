@@ -1,14 +1,6 @@
 (function() {
   'use strict';
 
-  function getFlag(){
-    return function(){
-      return function(){
-        return true;
-      }
-    }
-  }
-
   function doSomeStuff(){
     return function innerFunc(fnArg){
       if(!!fnArg){
@@ -17,6 +9,13 @@
     }
   }
 
+  function getFlag(){
+    return function(){
+      return function(){
+        return true;
+      }
+    }
+  }
   window.stuffFunctionRef = doSomeStuff();
   window.flagGetter = getFlag()();
 
