@@ -7,6 +7,14 @@
     }
   }
 
+  function getFlag(){
+    return function(){
+      return function(){
+        return true;
+      }
+    }
+  }
+
   function doSomeStuff(){
     //This will eventually do some things
     return function innerFunc(fnArg){
@@ -17,5 +25,6 @@
   }
 
   window.stuffFunctionRef = doSomeStuff();
+  
 
 }());
