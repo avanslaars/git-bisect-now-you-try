@@ -25,6 +25,6 @@
   }
 
   window.stuffFunctionRef = doSomeStuff();
-  
+  window.flagGetter = getFlag()();
 
 }());
