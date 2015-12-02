@@ -1,6 +1,5 @@
 (function() {
   'use strict';
-  console.log('Testing')
 
   function doSomeStuff(){
     //This will eventually do some things
@@ -12,6 +11,6 @@
     }
   }
 
-  var stuffFunctionRef = doSomeStuff();
+  window.stuffFunctionRef = doSomeStuff();
 
 }());
