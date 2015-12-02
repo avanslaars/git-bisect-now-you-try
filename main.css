@@ -5,3 +5,7 @@ body{
 h1{
   font-size: 22px;
 }
+
+p{
+  line-height: 1.5em;
+}
