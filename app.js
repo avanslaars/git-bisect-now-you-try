@@ -1,12 +1,6 @@
 (function() {
   'use strict';
 
-  function getMeAValue(valueFlag){
-    if(!!valueFlag === true){
-      return 'the value'
-    }
-  }
-
   function getFlag(){
     return function(){
       return function(){
