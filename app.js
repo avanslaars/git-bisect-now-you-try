@@ -3,9 +3,9 @@
 
   window.stuffFunctionRef = doSomeStuff();
   window.flagGetter = getFlag()();
-  
+
   function doSomeStuff(){
-    return function innerFunc(fnArg){
+    return function callTheAlert(fnArg){
       if(!!fnArg){
         window.alert('That doesn\'t go there!')
       }
